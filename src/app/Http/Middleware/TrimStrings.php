@@ -2,7 +2,7 @@
 
 namespace App\Http\Middleware;
 
-use pandaac\Framework\Foundation\Http\Middleware\TrimStrings as Middleware;
+use OpenAAC\Framework\Foundation\Http\Middleware\TrimStrings as Middleware;
 
 class TrimStrings extends Middleware
 {

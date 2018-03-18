@@ -35,6 +35,6 @@ require __DIR__.'/../vendor/autoload.php';
 |
 */
 
-$bootstrap = new pandaac\Framework\Bootstrapper;
+$bootstrap = new OpenAAC\Framework\Bootstrapper;
 
-$bootstrap->run(__DIR__);
+$bootstrap->run(__DIR__.'/../');

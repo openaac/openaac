@@ -2,7 +2,7 @@
 
 namespace App\Http;
 
-use pandaac\Framework\Foundation\Http\Kernel as HttpKernel;
+use OpenAAC\Framework\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
 {

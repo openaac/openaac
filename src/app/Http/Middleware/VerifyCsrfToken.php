@@ -2,7 +2,7 @@
 
 namespace App\Http\Middleware;
 
-use pandaac\Framework\Foundation\Http\Middleware\VerifyCsrfToken as Middleware;
+use OpenAAC\Framework\Foundation\Http\Middleware\VerifyCsrfToken as Middleware;
 
 class VerifyCsrfToken extends Middleware
 {

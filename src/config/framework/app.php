@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'pandaac'),
+    'name' => env('APP_NAME', 'OpenAAC'),
 
     /*
     |--------------------------------------------------------------------------
@@ -150,7 +150,6 @@ return [
         /*
          * Package Service Providers...
          */
-        pandaac\Account\Creation\Providers\AccountCreationServiceProvider::class,
 
         /*
          * Application Service Providers...

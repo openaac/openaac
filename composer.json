@@ -1,21 +1,51 @@
 {
-    "name": "pandaac/pandaac",
+    "name": "openaac/openaac",
     "type": "project",
     "license": "MIT",
+    "support": {
+        "issues": "https://github.com/openaac/core/issues"
+    },
     "authors": [
         {
             "name": "Christopher Eklund",
             "email": "eklundchristopher@gmail.com"
+        },
+        {
+            "name": "Panagiotis Pagoulatos",
+            "email": "phpanos@gmail.com"
         }
     ],
     "require": {
-        "pandaac/distributions": "dev-master",
-        "pandaac/account": "dev-master"
+        "openaac/distributions": "dev-master",
+        "openaac/account": "dev-master"
     },
     "autoload": {
         "psr-4": {
             "App\\": "src/app/"
         }
     },
-    "minimum-stability": "dev"
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate"
+        ],
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

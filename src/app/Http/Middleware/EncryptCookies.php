@@ -2,7 +2,7 @@
 
 namespace App\Http\Middleware;
 
-use pandaac\Framework\Foundation\Http\Middleware\EncryptCookies as Middleware;
+use OpenAAC\Framework\Foundation\Http\Middleware\EncryptCookies as Middleware;
 
 class EncryptCookies extends Middleware
 {

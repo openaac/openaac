@@ -3,7 +3,7 @@
 namespace App\Exceptions;
 
 use Exception;
-use pandaac\Framework\Foundation\Exceptions\Handler as ExceptionHandler;
+use OpenAAC\Framework\Foundation\Exceptions\Handler as ExceptionHandler;
 
 class Handler extends ExceptionHandler
 {

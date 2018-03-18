@@ -3,7 +3,7 @@
 namespace App\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
-use pandaac\Framework\Foundation\Console\Kernel as ConsoleKernel;
+use OpenAAC\Framework\Foundation\Console\Kernel as ConsoleKernel;
 
 class Kernel extends ConsoleKernel
 {
@@ -34,8 +34,8 @@ class Kernel extends ConsoleKernel
      */
     protected function commands()
     {
-        $this->load(__DIR__.'/Commands');
+        // $this->load(__DIR__.'/Commands');
 
-        require routes_path('console.php');
+        // require routes_path('console.php');
     }
 }
